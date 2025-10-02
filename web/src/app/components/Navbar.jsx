@@ -9,10 +9,13 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-[#0f1216] text-white border-b border-amber-600/70">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Image src="/image8.png" alt="Developer.X Logo" width={45} height={40} />
-          
+      <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 h-10 sm:h-12 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 sm:gap-3">
+          <Image src="/image8.png" alt="Developer.X Logo" width={32} height={28} className="sm:w-[45px] sm:h-[40px]" />
+          <div className="flex flex-col">
+            <span className="text-white font-bold text-sm sm:text-lg">Developer.X</span>
+            <span className="text-[10px] sm:text-xs text-gray-400">Tech Company</span>
+          </div>
         </Link>
         
         {/* Desktop Navigation */}
@@ -36,12 +39,12 @@ export default function Navbar() {
           </button>
 
           {/* Search Bar */}
-          <div className="relative">
+          <div className="relative hidden sm:block">
             <input
-              className="w-44 md:w-60 rounded-full bg-white text-[11px] placeholder:text-neutral-500 text-neutral-900 pl-8 pr-3 py-1.5 outline-none ring-1 ring-neutral-300 focus:ring-amber-500/70"
+              className="w-32 sm:w-44 md:w-60 rounded-full bg-white text-[10px] sm:text-[11px] placeholder:text-neutral-500 text-neutral-900 pl-6 sm:pl-8 pr-2 sm:pr-3 py-1 sm:py-1.5 outline-none ring-1 ring-neutral-300 focus:ring-amber-500/70"
               placeholder="Search articles..."
             />
-            <svg className="absolute left-2.5 top-1.5 h-4 w-4 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="absolute left-2 sm:left-2.5 top-1 sm:top-1.5 h-3 w-3 sm:h-4 sm:w-4 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
             </svg>
           </div>

@@ -10,6 +10,10 @@ const links = [
   { href: "/categories", label: "Categories" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+  { href: "/auth", label: "Authentication Center" },
+  { href: "/auth/signin", label: "Sign In" },
+  { href: "/auth/signup", label: "Sign Up" },
+  { href: "/auth/forgot-password", label: "Forgot Password" },
 ];
 
 export default function PagesIndex() {
